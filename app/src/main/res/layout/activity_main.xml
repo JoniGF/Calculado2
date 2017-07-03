@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.walter.calculadora.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Num1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/Suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:text="Suma"
+            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:onClick="sumar"/>
+
+        <Button
+            android:id="@+id/Resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            android:layout_alignBaseline="@+id/Suma"
+            android:layout_alignBottom="@+id/Suma"
+            android:layout_alignRight="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2"
+            android:onClick="restar"/>
+
+        <Button
+            android:id="@+id/Division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/Suma"
+            android:layout_alignStart="@+id/Suma"
+            android:onClick="dividir"/>
+
+        <Button
+            android:id="@+id/Multiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiplicacion"
+            android:layout_alignBaseline="@+id/Division"
+            android:layout_alignBottom="@+id/Division"
+            android:layout_alignLeft="@+id/Resta"
+            android:layout_alignStart="@+id/Resta"
+            android:onClick="multiplicar"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Num2"
+            android:layout_above="@+id/Resta"
+            android:layout_alignLeft="@+id/Suma"
+            android:layout_alignStart="@+id/Suma" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textSize="36sp"
+            android:layout_below="@+id/Division"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
